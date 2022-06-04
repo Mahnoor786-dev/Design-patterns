@@ -1,0 +1,16 @@
+--- WHEN to use:
+1- Using the Composite pattern makes sense only when the core model of your app can be represented as a tree.
+
+2- Composite Pattern should be used when clients need to ignore the difference between compositions of objects and individual objects. If programmers find that they are using multiple objects in the same way, and often have nearly identical code to handle each of them, then composite is a good choice, it is less complex in this situation to treat primitives and composites as homogeneous.
+
+3- Less number of objects reduces the memory usage, and it manages to keep us away from errors related to memory like java.lang.OutOfMemoryError.
+Although creating an object in Java is really fast, we can still reduce the execution time of our program by sharing objects.
+
+- WHAT it does?
+The Composite pattern suggests that you work with composite node and leaf node object through a common interface which declares a method for xyz functionality..
+
+
+--- When not to use Composite Design Pattern?
+
+1- Composite Design Pattern makes it harder to restrict the type of components of a composite. So it should not be used when you don't want to represent a full or partial hierarchy of objects.
+2- Composite Design Pattern can make the design overly general. It makes harder to restrict the components of a composite. Sometimes you want a composite to have only certain components. With Composite, you can’t rely on the type system to enforce those constraints for you. Instead you’ll have to use run-time checks.
